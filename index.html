@@ -132,10 +132,9 @@
   .box-btn:disabled:active{transform:none;}
 
   /* ---------------- 화면 1. 시작 화면 ---------------- */
-  #screen-start{align-items:center; justify-content:space-between; text-align:center; padding-top:clamp(40px,8vh,80px); padding-bottom:clamp(28px,5vh,52px);}
-  .start-title{font-size:clamp(28px,5.5vh,44px);}
-  .start-sub{font-size:clamp(20px,4vh,32px); margin-top:6px; color:var(--accent-press);}
-  .fruit-illust{font-size:clamp(64px,12vh,120px); line-height:1;}
+  #screen-start{align-items:center; justify-content:center; text-align:center; gap:clamp(48px,10vh,96px);}
+  .start-title{font-size:clamp(38px,7.5vh,60px);}
+  .start-sub{font-size:clamp(26px,5.5vh,44px); margin-top:10px; color:var(--accent-press);}
   .start-cta{width:100%; font-size:clamp(22px,4vh,32px); padding:0 20px;}
 
   /* ---------------- 화면 2. 인원 선택 ---------------- */
@@ -249,7 +248,6 @@
       <h1 class="start-title">어서오세요!</h1>
       <div class="start-sub">열매 ㄱㄴㄷ 뷔페입니다</div>
     </div>
-    <div class="fruit-illust">🍎🍇🍊</div>
     <button class="box-btn primary start-cta" onclick="goTo('screen-count')">시작하기</button>
   </div>
 
@@ -268,7 +266,7 @@
       <div class="label">결제 금액</div>
       <div class="amount" id="priceDisplay">0원</div>
     </div>
-    <div class="unit-price">객단가 1인 10,000원</div>
+    <div class="unit-price">1인 당 10,000원</div>
 
     <button class="box-btn primary" id="nextBtn" onclick="goTo('screen-confirm')" disabled>다음</button>
   </div>
